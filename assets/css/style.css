@@ -2,8 +2,12 @@ html{
     background-image: url(../images/cloth.png);
 }
 body{
-    font-family:'Amatic SC', cursive;
     margin:0;
+}
+p{
+    font-family:'Amatic SC', cursive;
+    font-size: 1.35em;
+    font-weight: bold;
 }
 
 h1{
@@ -12,22 +16,55 @@ h1{
     font-weight: bolder;
     display: inline-block;
     margin:0;
-    
 }
-h2 {
+h2{
+    font-family:'Amatic SC', cursive;
+    font-size: 35px;
+    font-weight: bolder;
+    margin:0;
+    margin-right: 25px;
+    color: #383838;
+}
+h2.inst {
+    font-size: 1.5em;
     font-family: 'Dancing Script', cursive;
+    color:black;
+}
+h2.full-inst{
+    font-size: 2em;
+    font-family:  'Dancing Script', cursive;
+    color: black;
+    margin-right: 0;
 }
 h3{
     font-family:'Amatic SC', cursive;
-    font-size: 25px;
+    font-size: 40px;
     font-weight: bolder;
+    margin:0;
 }
-
+p#hider{
+    margin: 0;
+    text-align: right;
+    color: grey;
+    font-size:1em;
+}
+p.winner-loser{
+    margin: 0;
+    text-align: center;
+    color: grey;
+    font-size:1.25em; 
+}
+h3#click{
+    color: grey;
+    font-size:1em;
+    margin-left: 30px;
+}
 header{
     margin-top:20px;
     background-color: #f7f5f5;
     padding-left: 15px;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #header-wrap{
     max-width: 800px;
@@ -39,34 +76,44 @@ header{
     float: right;
     top: 0;
     display: inline-block;
+    background-color: #d8d6d6;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 #inst-div{
     position: absolute;
     margin-left: 48px;
+    margin-top:25px;
 }
 .openEnvelope{
     width:100%;
 }
 
-#game-div{
+main{
     max-width: 800px;
-    margin: 0 auto;
+    margin-left:auto;
+    margin-right: auto;
+}
+#game-div{
+    max-width: 600px;
+    margin: 0;
 }
 
 .envelope{
-    width:24%;
+    width: 45%;
+    margin-right: 4.5%;
+    margin-bottom: 4.5%;
 }
 
 #stat-div{
-    max-width: 800px;
     margin: 0 auto;
-    width:100%;
-    text-align: center;
+    width:80%;
+    text-align: justify;
 }
 
 #stat-div div{
-    width: 40%;
-    display: inline-block;
+    width: fit-content;
+    margin: 0 auto;
 }
 #stat-div div h2{
     display: inline-block;
@@ -74,4 +121,26 @@ header{
 }
 #stat-div div h3{
     display:inline-block;
+}
+
+.num-div#loss-div{
+    margin-bottom:25px;
+}
+img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.hidden{
+    background-color: #ffd8cb;
+    position: absolute;
+    width: 500px;
+    right: 36.5%;
+    top: 15%;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+#loser,
+#winner{
+    visibility: hidden;
 }

@@ -4,8 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  
+  <title>Card Collector</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png"/>
   <!-- Added link to the jQuery Library -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -19,41 +21,65 @@
     <div id="header-wrap">
       <h1>Card Collector</h1>
       <div class="head-div">
-        <div id="inst-div"><h2>Instructions</h2></div>
-            <img class="openEnvelope"src="./assets/images/openEnvelope.png" alt="openEnvelope">
+        <div id="inst-div">
+          <h2 class="inst">Instructions</h2>
+          <h3 id="click">[click]</h3>
+        </div>
+            <img class="openEnvelope"id = "inst-img"src="./assets/images/openEnvelope.png" alt="openEnvelope">
+        <div id="stat-div">
+          <div class="num-div" id = "goal-div">
+                <h2>goal:  </h2>
+                <h3 id="goalNumber"></h3>
+          </div>
+    
+          <div class="num-div" id = "score-div">
+              <h2>cart:  </h2>
+              <h3 id = "score"></h3>
+          </div>
+          <hr>
+          <div class="num-div" id = "win-div">
+              <h2>wins:  </h2>
+              <h3 id = "wins"></h3>
+          </div>
+    
+          <div class="num-div" id = "loss-div">
+                <h2>losses:  </h2>
+                <h3 id = "losses"></h3>
+          </div>
+        </div>         
       </div>
     </div>
   </header>
-
-  <div id="game-div">
-    <img id = "envelopeOne" class = "envelope" src="./assets/images/blueEnvelope.png" alt="blueEnvelope">
-    <img id = "envelopeTwo" class = "envelope" src="./assets/images/pinkEnvelope.png" alt="pinkEnvelope">
-    <img id = "envelopeThree" class = "envelope" src="./assets/images/purpleEnvelope.png" alt="purpleEnvelope">
-    <img id = "envelopeFour" class = "envelope" src="./assets/images/yellowEnvelope.png" alt="yellowEnvelope">
-  </div>
-
-  <div id="stat-div">
-    <div class="num-div" id = "goal-div">
-          <h2>Goal:  </h2>
-          <h3 id="goalNumber"></h3>
+    <div class="hidden" id="loser">
+      <h2 class="full-inst">Yikes! That's too many cards.</h2>
+      <p class="winner-loser">[click for next game]</p>
+    </div>
+    <div class="hidden" id="winner">
+      <h2 class="full-inst">Woohoo! You did it!</h2>
+      <p class="winner-loser">[click for next game]</p>
+    </div>
+    <div class="hidden" id="instructions">
+      <h2 class="full-inst">Instructions:</h2>
+      <p>You will be given a goal number of cards to buy - your "goal."</p>
+      <p>Each envelop has specific number of cards in it.</p>
+      <p>Click on an envelope to add its quantity of cards to your cart.</p>
+      <p>The number of cards in each envelope will remain hidden the entire game.</p>
+      <p>hint: look at how your score changes for the envelop quantities.</p>
+      <p>To win, you must get the same number of cards in your cart as the goal.</p>
+      <p>Get more cards than the goal and you lose.</p>
+      <h2 class="full-inst">Good Luck!</h2>
+      <p id="hider">[click to hide instructions]</p>
     </div>
 
-    <div class="num-div" id = "score-div">
-        <h2>Score:  </h2>
-        <h3 id = "score"></h3>
-    </div>
-    
-    <div class="num-div" id = "win-div">
-        <h2>Wins:  </h2>
-        <h3 id = "wins"></h3>
+  <main>
+    <div id="game-div">
+      <img id = "envelopeOne" class = "envelope" src="./assets/images/blueEnvelope.png" alt="blueEnvelope">
+      <img id = "envelopeTwo" class = "envelope" src="./assets/images/pinkEnvelope.png" alt="pinkEnvelope">
+      <img id = "envelopeThree" class = "envelope" src="./assets/images/purpleEnvelope.png" alt="purpleEnvelope">
+      <img id = "envelopeFour" class = "envelope" src="./assets/images/yellowEnvelope.png" alt="yellowEnvelope">
     </div>
 
-    <div class="num-div" id = "loss-div">
-          <h2>Losses:  </h2>
-          <h3 id = "losses"></h3>
-    </div>
-  </div>
-
+  </main>
   <script src="./assets/javascript/game.js"></script>
 </body>
 </html>
