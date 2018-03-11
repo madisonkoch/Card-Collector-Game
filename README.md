@@ -1,0 +1,1 @@
+Follow the on-screen instructions to play the game.

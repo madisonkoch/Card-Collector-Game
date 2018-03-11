@@ -1,3 +1,5 @@
+@import url(./reset.css);
+
 html{
     background-image: url(../images/cloth.png);
 }
@@ -138,7 +140,7 @@ img:hover{
     text-align: center;
     padding: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+    line-height: 2;
 }
 #loser,
 #winner{
