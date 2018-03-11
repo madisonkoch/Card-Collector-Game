@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Style -->
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Dancing+Script" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+  <header>
+    <div id="header-wrap">
+      <h1>Card Collector</h1>
+      <div class="head-div">
+        <div id="inst-div"><h2>Instructions</h2></div>
+            <img class="openEnvelope"src="./assets/images/openEnvelope.png" alt="openEnvelope">
+      </div>
+    </div>
+  </header>
+
+  <div id="game-div">
+    <img id = "envelopeOne" class = "envelope" src="./assets/images/blueEnvelope.png" alt="blueEnvelope">
+    <img id = "envelopeTwo" class = "envelope" src="./assets/images/pinkEnvelope.png" alt="pinkEnvelope">
+    <img id = "envelopeThree" class = "envelope" src="./assets/images/purpleEnvelope.png" alt="purpleEnvelope">
+    <img id = "envelopeFour" class = "envelope" src="./assets/images/yellowEnvelope.png" alt="yellowEnvelope">
+  </div>
+
+  <div id="stat-div">
+    <div class="num-div" id = "goal-div">
+          <h2>Goal:  </h2>
+          <h3 id="goalNumber"></h3>
+    </div>
+
+    <div class="num-div" id = "score-div">
+        <h2>Score:  </h2>
+        <h3 id = "score"></h3>
+    </div>
+    
+    <div class="num-div" id = "win-div">
+        <h2>Wins:  </h2>
+        <h3 id = "wins"></h3>
+    </div>
+
+    <div class="num-div" id = "loss-div">
+          <h2>Losses:  </h2>
+          <h3 id = "losses"></h3>
+    </div>
+  </div>
+
+  <script src="./assets/javascript/game.js"></script>
+</body>
+</html>

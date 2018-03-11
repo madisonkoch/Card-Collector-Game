@@ -1,0 +1,77 @@
+html{
+    background-image: url(../images/cloth.png);
+}
+body{
+    font-family:'Amatic SC', cursive;
+    margin:0;
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 75px;
+    font-weight: bolder;
+    display: inline-block;
+    margin:0;
+    
+}
+h2 {
+    font-family: 'Dancing Script', cursive;
+}
+h3{
+    font-family:'Amatic SC', cursive;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+header{
+    margin-top:20px;
+    background-color: #f7f5f5;
+    padding-left: 15px;
+    margin-bottom: 45px;
+}
+#header-wrap{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.head-div{
+    width: 190px;
+    float: right;
+    top: 0;
+    display: inline-block;
+}
+#inst-div{
+    position: absolute;
+    margin-left: 48px;
+}
+.openEnvelope{
+    width:100%;
+}
+
+#game-div{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.envelope{
+    width:24%;
+}
+
+#stat-div{
+    max-width: 800px;
+    margin: 0 auto;
+    width:100%;
+    text-align: center;
+}
+
+#stat-div div{
+    width: 40%;
+    display: inline-block;
+}
+#stat-div div h2{
+    display: inline-block;
+    margin-right:5px;
+}
+#stat-div div h3{
+    display:inline-block;
+}
