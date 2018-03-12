@@ -93,3 +93,9 @@
     $('#inst-img').click(function(){
         document.getElementById('instructions').style.visibility = "visible"; 
     });
+    $('#inst-img').click(function(){
+            document.getElementById('winner').style.visibility = "hidden";
+    });
+    $('#inst-img').click(function(){
+            document.getElementById('loser').style.visibility = "hidden";
+    });
