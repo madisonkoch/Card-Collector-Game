@@ -33,6 +33,7 @@
 
         score = 0;
         runningScore = 0;
+        envelopeClickedArray = [];
 
         $('#envelopeOne').val(envelopeOne);
         $('#envelopeTwo').val(envelopeTwo);
@@ -41,9 +42,10 @@
         
         $('#goalNumber').text(goalNumber);
 
-        $('#score').text(score);
+        $('#score').text(runningScore);
 
         console.log(envelopeOne, envelopeTwo, envelopeThree, envelopeFour);
+        console.log(goalNumber,runningScore);
     }
 //
 //Initial Game State
@@ -75,12 +77,14 @@
             wins++;
             $('#wins').text(wins);
             document.getElementById('winner').style.visibility = "visible";
+            runningScore = 0;
             nextGame();
         }
         else if (runningScore > goalNumber){
             losses++;
             $('#losses').text(losses);
             document.getElementById('loser').style.visibility = "visible";
+            runningScore = 0;
             nextGame();
         }
     }
